@@ -1,6 +1,6 @@
 require 'bitcoin-client'
 Dir['./coin_config/*.rb'].each {|file| require file }
-require './bitcoin_client_extensions.rb'
+require './src/bitcoin_client_extensions.rb'
 class Command
   attr_accessor :result, :action, :user_name, :icon_emoji
   ACTIONS = %w(balance deposit tip withdraw commands help)
